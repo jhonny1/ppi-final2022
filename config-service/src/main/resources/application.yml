@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/Users/Usuario/Desktop/2022-2/PDS/m-f-borrador/taller2-configData
+  security:
+    user:
+      name: ${CONFIG_USER}
+      password: ${CONFIG_PASSWORD}
+server:
+  port: 9000
+
+
